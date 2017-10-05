@@ -23,7 +23,7 @@ namespace LZW
             }
             foreach (var item in alphabet.OrderBy(i => i.Key))
             {
-                dictionary.Add(item.Key, item.Value);
+                dictionary.Add(item.Key, dictionary.Count + 1);
             }
             string output = "";
             string word = text[0].ToString();
